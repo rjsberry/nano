@@ -1,0 +1,16 @@
+[package]
+name = "nano-oneshot"
+version = "0.1.0"
+authors = ["Richard Berry <rjsberry@pm.me>"]
+license = "MIT/Apache-2.0"
+description = "A simple one-shot channel"
+documentation = "https://docs.rs/nano-oneshot"
+homepage = "https://github.com/rjsberry/nano"
+readme = "README.md"
+keywords = ["channel"]
+categories = ["concurrency", "data-structures"]
+include = ["Cargo.toml", "src/**/*.rs", "LICENSE-APACHE", "LICENSE-MIT"]
+edition = "2018"
+
+[dependencies]
+parking_lot = "0.8"

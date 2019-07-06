@@ -1,0 +1,17 @@
+[package]
+name = "nano-fs-perms"
+version = "0.1.0"
+authors = ["Richard Berry <rjsberry@pm.me>"]
+license = "MIT/Apache-2.0"
+description = "POSIX file access permissions"
+documentation = "https://docs.rs/nano-fs-perms"
+homepage = "https://github.com/rjsberry/nano"
+readme = "README.md"
+keywords = ["posix", "permissions", "filesystem"]
+categories = ["filesystem"]
+include = ["Cargo.toml", "src/**/*.rs", "LICENSE-APACHE", "LICENSE-MIT"]
+edition = "2018"
+
+[features]
+default = ["std"]
+std = []

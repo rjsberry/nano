@@ -1,4 +1,5 @@
 [workspace]
 members = [
+    "nano-fs-perms",
     "nano-oneshot",
 ]

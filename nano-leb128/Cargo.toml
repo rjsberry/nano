@@ -1,0 +1,28 @@
+[package]
+name = "nano-leb128"
+version = "0.1.0"
+authors = ["Richard Berry <rjsberry@pm.me>"]
+license = "MIT/Apache-2.0"
+description = "Little endian base 128 variable-length code compression"
+documentation = "https://docs.rs/nano-leb128"
+homepage = "https://github.com/rjsberry/nano"
+readme = "README.md"
+keywords = ["encoding", "compression", "variable", "length", "leb128"]
+categories = ["compression", "encoding", "no-std"]
+include = ["Cargo.toml", "src/**/*.rs", "LICENSE-APACHE", "LICENSE-MIT"]
+edition = "2018"
+
+[features]
+default = ["std"]
+std = ["byteio/std"]
+# Adds read_from/write_into methods that use traits in `std::io`
+std_io_ext = ["std"]
+# Adds read_from/write_into methods that use traits in `byteio`
+byteio_ext = []
+
+[dependencies]
+byteio = { version = "0.2", default-features = false }
+
+[dev-dependencies]
+quickcheck = "0.8"
+quickcheck_macros = "0.8"
